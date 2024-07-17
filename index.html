@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Studio - Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <!-- <div class="welcome">Welcome</div>
+    -->
+    <div class="top-logo" >
+        <img src="logo.png" class="home-logo" alt="">
+        <h1>Welcome to Gaze Photography</h1>
+    </div>
+    
+    <main>
+      
+        
+        <section class="gallery">
+            
+            <h2>Our Gallery</h2>
+            <div class="gallery-categories">
+
+                <button class="category-button" style="display:none;" onclick="filterGallery('all')">All</button>
+                <button class="category-button" style="display:none;" onclick="filterGallery('weddings')">Weddings</button>
+                <button class="category-button" onclick="filterGallery('portraits')">Portraits</button>
+                <button class="category-button" onclick="filterGallery('wraps')">Wraps</button>
+                <button class="category-button" style="display:none;" onclick="filterGallery('nature')">Nature</button>
+                <button class="category-button" onclick="filterGallery('studio')">Studio</button>
+            </div>
+            <div class="gallery-categories">
+                <label for="category-select" class="category-label">Category:</label>
+                <select id="category-select" onchange="filterGallery(this.value)">
+                    <option style="display:none;" value="all">Select</option>
+                    <option style="display:none;" value="nature">Nature</option>
+                    <option style="display:none;" value="weddings">Weddings</option>
+                    <option style="display:none;" value="birthdays">Birthdays</option>
+                    <option style="display:none;" value="graduation">Graduation</option>
+                    <option value="portraits">Portraits</option>
+                    <option value="wraps">Wraps</option>
+                    <option value="studio">Studio</option>
+                </select>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-item birthdays" style="display:none;"><img src="categories/birthdays/img10.jpg" alt="Birthdays" onclick="openModal(this)"></div>
+
+
+                <div class="gallery-item graduation" style="display:none;"><img src="categories/graduation/" alt="Graduation" onclick="openModal(this)"></div>
+
+
+                <div class="gallery-item weddings" style="display:none;"><img src="categories/wedding/img1.jpg" alt="Wedding" onclick="openModal(this)"></div>
+
+                <div class="gallery-item portraits"><img src="categories/portrait/DSC_7859.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits"><img src="categories/portrait/DSC_3246.jpg" alt="Portrait" onclick="openModal(this)"></div>
+
+                <div class="gallery-item wraps"><img src="categories/wraps/DSC_0223.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps"><img src="categories/wraps/DSC_2451.jpg" alt="Wraps" onclick="openModal(this)"></div>
+
+
+                <div class="gallery-item nature" style="display:none;"><img src="categories/nature/img7.jpg" alt="Nature" onclick="openModal(this)"></div>
+
+
+                <div class="gallery-item studio"><img src="categories/studio/DSC_2654.JPG" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio"><img src="categories/studio/DSC_5381.jpg" alt="Studio" onclick="openModal(this)"></div>
+
+
+                <div class="gallery-item weddings" style="display:none;"><img src="categories/wedding/img2.jpg" alt="Wedding" onclick="openModal(this)"></div>
+
+
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_4186 - B&W.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7150.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7603.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7648.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7804.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7812.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7817 - Potrait.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7885.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7922.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7936.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7949.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7954.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_4182 - B&W.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_7973.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_8006.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_8019.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_8048.JPG" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_8233.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_8407.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_8730.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/DSC_9740.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/IMG_6764.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/IMG_6904.jpg" alt="Portrait" onclick="openModal(this)"></div>
+                <div class="gallery-item portraits" style="display:none;"><img src="categories/portrait/IMG_9403.jpg" alt="Portrait" onclick="openModal(this)"></div>
+
+
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0246.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0459.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0471.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0476.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0494.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0580.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0204.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0633.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0637.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0648.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0657.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0661.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0663.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0824.JPG" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_0868.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_1182.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_1314.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_1493.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_1501.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_1529.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_1549.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_2587.JPG" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_2861.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_2876.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_2906.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_3174.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_3236.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_4684_100401.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_6389.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_6924.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_6974.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_7033.JPG" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_7069.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_7092.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_7110.JPG" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_7112.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_7771.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_7916.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_7952.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_7970.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_8323.JPG" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_8524.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_8565.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_8590.jpg" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_9546.JPG" alt="Wraps" onclick="openModal(this)"></div>
+                <div class="gallery-item wraps" style="display:none;"><img src="categories/wraps/DSC_9676.JPG" alt="Wraps" onclick="openModal(this)"></div>
+                
+
+                <div class="gallery-item nature" style="display:none;"><img src="categories/nature/img8.jpg" alt="Nature" onclick="openModal(this)"></div>
+
+
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/IMG_6929.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/IMG_6946.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_2794.JPG" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_3113.JPG" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_3153.JPG" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_3195.JPG" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_3253.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_3280.JPG" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_3531.JPG" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_3803.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/IMG_6781.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_3912.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_4131.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_4161.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_4167.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_4170.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_5381.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_6822.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_7172.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_7415.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_7462.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_7668.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_7805.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_7832.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_7843.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_7916.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_7957.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_8021.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_8312.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_8374.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_9173.JPG" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_9516.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_9535.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_9553.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_9556.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_9570.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_9593.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_9677.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_9719.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_2586.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_2599.jpg" alt="Studio" onclick="openModal(this)"></div>
+                <div class="gallery-item studio" style="display:none;"><img src="categories/studio/DSC_2672.JPG" alt="Studio" onclick="openModal(this)"></div>
+            </div>
+    
+             <!-- Navigation Arrows -->
+             <div style="display: none;" id="nav-arrows">
+                <div class="nav-arrow left-arrow" onclick="prevImage()"><i class='bx bxs-left-arrow'></i></div>
+                <div class="nav-arrow right-arrow" onclick="nextImage()"><i class='bx bxs-right-arrow'></i></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="logo" >
+            <img src="logo.png" class="image" alt="">
+        </div>
+            <p>Making awesome expressions.</p>
+        <br>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100089927296067" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.instagram.com/gaze254photography/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.tiktok.com/@gazephotographystudio" target="_blank"><i class="bx bxl-tiktok"></i></a>
+        </div>
+        <br>
+        <div class="contact-info">
+            <p>Contact Us: 0736865379 | 0707163445 | <br> g254photography@gmail.com</p>
+        </div>
+        
+        <div class="signup-center">
+            <a style="display:none;" href="signup.html" class="signup-button">Sign Up</a>
+        </div>
+        <br>
+        &copy; 2024 Gaze Photography. All rights reserved.
+     
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
